@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: #ffffffa4;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+main {
+  width: 50rem;
+  background-color: #000;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.output--section {
+  background-color: green;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.output {
+  background-color: #000;
+  height: 10rem;
+  padding: 1.6rem 1.8rem;
+  font-size: 2.4rem;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  text-align: right;
+}
+.result {
+  background-color: #000;
+  height: 40rem;
+  padding: 1.6rem 1.8rem;
+  font-size: 3rem;
+  text-align: right;
+}
+.btn--grp {
+  background-color: inherit;
+
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  text-align: center;
+}
+button {
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  border: none;
+  display: inline-block;
+  transition: all 0.3s;
+  border-radius: 2rem;
+}
+
+button:hover {
+  transform: translateY(-0.4rem) scale(1.06);
+}
+.all-clear {
+  flex-grow: 1;
+  background-color: rgb(255, 0, 0);
+}
+.all-clear:hover {
+  background-color: rgba(228, 14, 14, 0.932);
+}
+.clear {
+  flex-grow: 1;
+  background-color: rgb(245, 245, 9);
+}
+.clear:hover {
+  background-color: rgba(232, 232, 13, 0.949);
+}
+.number {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.equals {
+  flex-grow: 1;
+  background-color: rgb(4, 251, 4);
+}
+.equals:hover {
+  background-color: rgba(12, 217, 12, 0.924);
+}
+.operator {
+  flex-grow: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.decimal {
+  font-size: 3rem;
+}
